@@ -71,8 +71,9 @@ public class Graph< T > : IEnumerable< T > {
 	/// Check if map contains the specified value. Return true if it exists.
 	/// </summary>
 	/// <param name="value">Value.</param>
-	public bool Contains( T value ){
-		return nodeSet.FindByValue( value ) != null;
+	public string Contains( T value ){
+		bool isInList = nodeSet.FindByValue( value ) != null;
+		return " Is " + value + " in your map? " + isInList;
 	}
 	/// <summary>
 	/// Remove :
