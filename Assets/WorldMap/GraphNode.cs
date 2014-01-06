@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
+//Base class that finds a Nodes position in relation to the Graph as a whole.
+//Used for Graph.cs
 public class GraphNode< T > : Node< T > {
 	private List< int > costs;
 	public  GraphNode( ) : base( ){ }

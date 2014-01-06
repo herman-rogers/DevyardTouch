@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.ObjectModel;
 
+//Base Class that stores all Nodes for Graph.cs
 public class NodeList< T > : Collection< Node< T > > {
 	public NodeList( ) : base( ){ }
 	public NodeList( int initialSize ){

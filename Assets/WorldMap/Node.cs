@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-//Base Class For All GraphNode, NodeList
+//Base Class For GraphNode.cs and NodeList.cs
 public class Node< T > {
 	private T data;
 	private NodeList< T > neighbors = null;

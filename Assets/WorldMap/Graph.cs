@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+
 //The Main Class used to create Graphs ( base class for higherlevel graph creation )
 public class Graph< T > : IEnumerable< T > {
 	#region IEnumerable implementation
@@ -34,9 +35,9 @@ public class Graph< T > : IEnumerable< T > {
 		nodeSet.Add( new GraphNode< T >( value ) );
 	}
 	/// <summary>
-	/// AddDorectedEdge :
-	/// Adds a ONE-WAY directional path from current node A to new node B
-	/// Remember that once you move from A to B theres not coming back!
+	/// AddDirectedEdge :
+	/// Adds a ONE-WAY directional path from current node A to new node B.
+	/// Remember that once you move from A to B theres no coming back!
 	/// </summary>
 	/// <param name="from">From.</param>
 	/// <param name="to">To.</param>
@@ -50,8 +51,8 @@ public class Graph< T > : IEnumerable< T > {
 	}
 	/// <summary>
 	/// AddUndirectedEdge :
-	/// Adds a TWO-WAY directional path between current node A and new node B
-	/// Traveling from node A to node B and then deciding go back to A is possible.
+	/// Adds a TWO-WAY directional path between current node A and new node B.
+	/// Traveling from A to B and then deciding go back to A is possible.
 	/// </summary>
 	/// <param name="from">From.</param>
 	/// <param name="to">To.</param>
