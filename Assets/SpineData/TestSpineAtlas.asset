@@ -14,3 +14,4 @@ MonoBehaviour:
   atlasFile: {fileID: 4900000, guid: abe6d252401b8c24abb21e3b42b062c7, type: 3}
   materials:
   - {fileID: 2100000, guid: 486e84b1a04f1fc4b9787550f53286d3, type: 2}
+  - {fileID: 2100000, guid: 486e84b1a04f1fc4b9787550f53286d3, type: 2}
